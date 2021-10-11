@@ -47,7 +47,7 @@ body {
 }
 
 .button-small {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -65,7 +65,7 @@ body {
   height: 485px;
   background-color: #314850;
   background-image: url("../img/banner/banner-background.jpg");
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 /* Advantages */
@@ -117,7 +117,7 @@ body {
 }
 
 .advantages-list li:nth-child(even):not(:nth-child(2)) {
-  background-color: rgba(131, 179, 211, 0.2);;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .black-text {
@@ -142,7 +142,7 @@ body {
 }
 
 .button-big {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -160,7 +160,7 @@ body {
   color: #ffffff;
   background-color: #93adba;
   background-image: url("../img/newsletter-background.jpg");
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .newsletter-description {
@@ -169,7 +169,7 @@ body {
 }
 
 .button-medium {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -200,7 +200,7 @@ body {
   color: #ffffff;
   background-color: #799abd;
   background-image: url("../img/catalog-background-1.jpg");
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .inner-header-title {
@@ -210,13 +210,13 @@ body {
 
 /* Breadcrumbs */
 .breadcrumbs {
-	font-size: 16px;
+  font-size: 16px;
   line-height: 21px;
   color: #ffffff;
 }
 
 .breadcrumbs-link {
-	color: inherit;
+  color: inherit;
 }
 
 /* Filter */
@@ -227,7 +227,7 @@ body {
 }
 
 .button-reset {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
