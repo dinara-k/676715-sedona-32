@@ -36,19 +36,21 @@
       </nav>
 	  </header>
 
-    <main class="main-index">
+    <main class="main-container main-index">      
       <!--Главный заголовок -->
       <h1 class="visually-hidden">City of Sedona</h1>
       <section class="banner">
-        <h2 class="visually-hidden">Welcome to the gorgeous Sedona</h2>
-        <img src="img/banner/banner-text.svg" width="458" height="352" alt="Текст баннера">
+        <div class="banner-container">
+          <h2 class="visually-hidden">Welcome to the gorgeous Sedona</h2>
+          <img src="img/banner/banner-text.svg" width="458" height="352" alt="Текст баннера">
+        </div>
       </section>
       <!-- Преимущества -->
       <section class="about-sedona">
         <h3 class="title sedona-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
         <p class="sedona-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ol class="advantages-list">
-          <li class="advantages-item white-text">
+          <li class="advantages-item-main white-text">
             <img src="img/advantages/advantages-photo-1.jpg" width="800" height="384" alt="Город Седона">
             <h4 class="advantages-title">Настоящий городок</h4>
             <p class="advantages-description">— №1 —</p>
@@ -68,7 +70,7 @@
               </li>
             </ul>
           </li>
-          <li class="advantages-item white-text">
+          <li class="advantages-item-main white-text">
             <img src="img/advantages/advantages-photo-2.jpg" width="800" height="384" alt="Мост дьявола">
             <h4 class="advantages-title">Там есть мост дьявола</h4>
             <p class="advantages-description">— №2 —</p>
@@ -99,18 +101,18 @@
     </main>
 
     <!-- Подвал -->
-    <footer class="page-footer">
+    <footer class="page-footer">      
       <!--Подписка на рассылку-->
       <section class="newsletter newsletter-main">
         <h3 class="title">Подпишитесь на рассылку</h3>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-					<p class="newsletter-email">
-					<label class="visually-hidden" for="newsletter-email">Email</label>
-					<input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-					</p>
-					<button class="button-medium button-blue" type="submit">Подписаться</button>
-				</form>
+          <p class="newsletter-email">
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          </p>
+          <button class="button-medium button-blue" type="submit">Подписаться</button>
+        </form>
       </section>
       <section class="footer-contacts">
         <ul class="footer-social-list">
