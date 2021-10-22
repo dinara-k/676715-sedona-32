@@ -22,12 +22,18 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  min-width: 1200px;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
   background-color: #ffffff;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .title {
@@ -46,8 +52,6 @@ body {
 
 .navigation {
   display: flex;
-  width: 1057px;
-  margin: 0 auto;
 }
 
 .navigation-list {
@@ -95,7 +99,6 @@ body {
   flex-grow: 1;
 }
 
-/* остановилась здесь*/
 .banner {
   height: 485px;
   background-color: #314850;
@@ -121,7 +124,6 @@ body {
   color: #333333;
   background-color: #ffffff;
 }
-/*доделать список*/
 
 .advantages-list {
   display: flex;
@@ -134,22 +136,44 @@ body {
 .advantages-item-main {
 	display: flex;
 	flex-wrap: wrap;
-  width: 1200px;
+  background-color: #81b3d2;
 }
 
 .advantages-item {
   width: 400px;
+  min-height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-description-wrapper {
+  width: 400px;
+  min-height: 384px;
+}
+
+.advantages-image-wrapper {
+  width: 800px;
+  min-height: 384px;
+}
+
+.advantages-image {
+  display: block;
 }
 
 .advantages-sublist {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
 }
 
-.advantages-sublist > li {
+.advantages-sublist-item {
   width: 400px;
+  min-height: 384px;
 }
 
 .advantages-title {
@@ -257,7 +281,7 @@ body {
 .footer-contacts {
   display: flex;
   justify-content: space-between;  
-  width: 1130px;
+  /*width: 1130px;*/
   margin: 0 auto;
 }
 
@@ -274,11 +298,6 @@ body {
   color: #000000;
   text-align: center;
   text-decoration: none;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .inner-header {
@@ -302,34 +321,6 @@ body {
 
 .breadcrumbs-link {
   color: inherit;
-}
-
-.filter-container {
-  display: flex;
-  flex-direction: column;
-  width: 1060px;
-  margin: 0 auto;
-}
-
-.catalog-filter-group {
-  display: inline-block;
-}
-
-.catalog-filter-group:nth-child(1) {
-  width: 150px;
-}
-
-.catalog-filter-group:nth-child(2) {
-  width: 145px;
-}
-
-.catalog-filter-group:nth-child(3) {
-  width: 280px;
-}
-
-.catalog-column {
-  width: 1057px;
-  margin: 0 auto;
 }
 
 /* Filter */
@@ -363,11 +354,6 @@ body {
 
 .button-white-active {
   color:#000000;
-}
-
-.catalog-list-detail {
-  display: flex;
-  flex-direction: column;
 }
 
 .element-card-link {
