@@ -281,7 +281,6 @@ body {
 .footer-contacts {
   display: flex;
   justify-content: space-between;  
-  /*width: 1130px;*/
   margin: 0 auto;
 }
 
@@ -323,6 +322,33 @@ body {
   color: inherit;
 }
 
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
+  margin: 0 auto;
+}
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group:nth-child(1) {
+  width: 150px;
+}
+
+.catalog-filter-group:nth-child(2) {
+  width: 145px;
+}
+
+.catalog-filter-group:nth-child(3) {
+  width: 280px;
+}
+
+.catalog-column {
+  width: 1057px;
+  margin: 0 auto;
+}
+
 /* Filter */
 .catalog-filter-title {
   font-size: 20px;
@@ -354,6 +380,11 @@ body {
 
 .button-white-active {
   color:#000000;
+}
+
+.catalog-list-detail {
+  display: flex;
+  flex-direction: column;
 }
 
 .element-card-link {
