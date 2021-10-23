@@ -323,10 +323,8 @@ body {
 }
 
 .filter-container {
-  display: flex;
-  flex-direction: column;
-  width: 1060px;
-  margin: 0 auto;
+  margin-left: 72px;
+  margin-right: 72px;
 }
 .catalog-filter {
   display: flex;
@@ -345,8 +343,8 @@ body {
 }
 
 .catalog-column {
-  width: 1057px;
-  margin: 0 auto;
+  margin-left: 72px;
+  margin-right: 72px;
 }
 
 /* Filter */
@@ -380,11 +378,6 @@ body {
 
 .button-white-active {
   color:#000000;
-}
-
-.catalog-list-detail {
-  display: flex;
-  flex-direction: column;
 }
 
 .element-card-link {
