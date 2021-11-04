@@ -128,31 +128,33 @@
 
         <section>
           <div class="catalog-column">
-            <h3 class="search-results-title">Найдено гостиниц: <span>38</span></h3>
-            <!-- Сортировка -->
-            <div class="sorting-container">
-              <form class="sorting-type">
-                <label class="visually-hidden" for="sorting">Сортировка</label>
-                <select class="select-control" id="sorting" name="sorting">
-                  <option value="popular">Сначала популярные</option>
-                  <option value="cheap">Сначала дешёвые</option>
-                  <option value="expensive">Сначала дорогие</option>
-                </select>
-                <button class="visually-hidden" type="submit">Отсортировать элементы</button>
-              </form>
-              <a href="#" class="button-white">
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-              <a href="#" class="button-white">
-                <span class="visually-hidden">Показать детально</span>
-              </a>
-              <a href="#" class="button-white-active">
-                <span class="visually-hidden">Показать список</span>
-              </a>
+            <div class="catalog-top-container">
+              <h3 class="search-results-title">Найдено гостиниц: <span>38</span></h3>
+              <!-- Сортировка -->
+              <div class="sorting-container">
+                <form class="sorting-type">
+                  <label class="visually-hidden" for="sorting">Сортировка</label>
+                  <select class="select-control" id="sorting" name="sorting">
+                    <option value="popular">Сначала популярные</option>
+                    <option value="cheap">Сначала дешёвые</option>
+                    <option value="expensive">Сначала дорогие</option>
+                  </select>
+                  <button class="visually-hidden" type="submit">Отсортировать элементы</button>
+                </form>
+                <a href="#" class="button button-white">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+                <a href="#" class="button button-white">
+                  <span class="visually-hidden">Показать детально</span>
+                </a>
+                <a href="#" class="button button-white-active">
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </div>
             </div>
 
             <!-- Список элементов -->
-            <ul>
+            <ul class="element-list">
               <li class="element-card">
                 <div class="element-card-column1">
                   <a class="element-card-link" href="#">
@@ -253,38 +255,40 @@
             <a class="button-medium button-blue pagination-show-more" href="#">Загрузить еще</a>
 
             <!-- Пагинация -->
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a class="pagination-link button-medium pagination-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-medium button-blue" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-medium button-blue" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-medium button-blue" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-medium button-blue" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-medium button-blue" href="#">10</a>
-              </li>
-            </ul>
+            <div class="pagination-container">
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a class="pagination-link button-medium pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-medium button-blue" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-medium button-blue" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-medium button-blue" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-medium button-blue" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-medium button-blue" href="#">10</a>
+                </li>
+              </ul>            
 
-            <form class="sorting-amount-form" action="https://echo.htmlacademy.ru" method="post">
-              <label>Гостиниц на странице:
-                <select name="sorting-by">
-                  <option value="4">4</option>
-                  <option value="8">8</option>
-                  <option value="12">12</option>
-                  <option value="16">16</option>
-                </select>
-              </label>
-              <button class="visually-hidden" type="submit">Отобразить элементы</button>
-            </form>
+              <form class="sorting-amount-form" action="https://echo.htmlacademy.ru" method="post">
+                <label>Гостиниц на странице:
+                  <select name="sorting-by">
+                    <option value="4">4</option>
+                    <option value="8">8</option>
+                    <option value="12">12</option>
+                    <option value="16">16</option>
+                  </select>
+                </label>
+                <button class="visually-hidden" type="submit">Отобразить элементы</button>
+              </form>
+            </div>
           </div>
         </section>
       </main>
