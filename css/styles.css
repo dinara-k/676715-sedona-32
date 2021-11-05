@@ -70,12 +70,13 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  /*width: 310px;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 350px;
   list-style-type: none;
 }
 
 .navigation-link {
-  display: block;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -85,10 +86,8 @@ body {
   text-decoration: none;
 }
 
-.navigation-list .navigation-link {
-  padding-top: 20px;
-  padding-right: 33px;
-  padding-bottom: 20px;
+.navigation-item {  
+  margin-right: 33px;  
 }
 
 .navigation-logo {
@@ -101,13 +100,7 @@ body {
   align-items: center;
   max-width: 250px;
   margin-left: auto;
-}
-
-.navigation-user .navigation-link {
-  min-width: 18px;
-  min-height: 18px;
-  padding-top: 23px;
-  padding-right: 21px;
+  padding-top: 23px;  
   padding-bottom: 23px;
 }
 
@@ -335,9 +328,13 @@ body {
   background-repeat: no-repeat;
 }
 
-.newsletter .title {
+.newsletter .text-container {
   padding-top: 94px;
-  padding-bottom: 15px;
+}
+
+.newsletter .title {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .newsletter-description {
@@ -372,6 +369,7 @@ body {
   flex-wrap: wrap;
   margin: 0;  
   padding: 0;
+  width: 110px;
   list-style-type: none;
 }
 
@@ -381,8 +379,8 @@ body {
 }
 
 .footer-social-item {
-  width: 21px;
-  height: 18px;
+  max-width: 21px;
+  max-height: 18px;
   margin-right: 30px;
 }
 
@@ -453,7 +451,7 @@ body {
 
 .catalog-column {
   margin-left: 72px;
-  margin-right: 72px;
+  margin-right: 72px;  
 }
 
 /* Filter */
@@ -473,26 +471,25 @@ body {
 }
 
 /* Elements-list */
+.catalog-top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
 .search-results-title {
+  margin: 0;
   font-size: 30px;
   line-height: 39px;
   color: #000000;
   text-transform: uppercase;
 }
 
-.catalog-top-container {
-  display: flex;
-  align-items: center;
-}
-
-.search-results-title {
-  margin-top: 50px;
-  margin-bottom: 45px;
-  margin-right: 192px;
-}
-
 .sorting-container {
-  display: flex;
+  display: flex;  
+  width: 528px;
 }
 
 .sorting-type {
