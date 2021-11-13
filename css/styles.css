@@ -521,24 +521,22 @@ body {
 
 .element-card {
   display: grid;
-  grid-template-columns: 180px 36px 151px 160px 361px 160px;
-  grid-template-rows: min-content min-content 31px 37px;
+  grid-template-columns: 180px 1fr 160px;
+  column-gap: 20px;
   padding: 30px 0;
-}
-
-.element-card-image-link {
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
-  align-self: stretch;
 }
 
 .element-card-image-link img {
   object-fit: cover;
 }
 
+.element-card-column2 {
+  display: grid;
+  grid-template-columns: 150px 150px 360px;
+}
+
 .element-card-title-link {
-  grid-column: 3 / -2;
-  grid-row: 1 / 2;
+  grid-column: 1 / -1;
   text-decoration: none;
 }
 
@@ -550,40 +548,22 @@ body {
 }
 
 .element-card-type {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
+  grid-column: 1 / 2;
 }
 
 .element-card-price {
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
-.element-card-rating-stars {
-  grid-column: 6 / -1;
-  grid-row: 1 / 2;
+.element-card-column2 .button-brown {
+  grid-column: 1 / 2;
+  margin-top: auto;
 }
 
-.element-card-rating-text {
-  grid-column: 6 / -1;
-  grid-row: 4 / -1;
-  justify-self: center;
-  align-self: center;
-}
-
-.element-card .button-brown {
-  grid-column: 3 / 4;
-  grid-row: 4 / -1;
-  justify-self: center;
-  align-self: center;
-}
-
-.element-card .button-blue,
-.element-card .button-green {
-  grid-column: 4 / 5;
-  grid-row: 4 / -1;
-  justify-self: center;
-  align-self: center;
+.element-card-column2 .button-blue,
+.element-card-column2 .button-green {
+  grid-column: 2 / 3;
+  margin-top: auto;
 }
 
 .button-green {
@@ -592,6 +572,7 @@ body {
 }
 
 .element-card-rating-text {
+  margin-top: auto;
   font-size: 16px;
   line-height: 21px;
   background-color: #F2F2F2;
