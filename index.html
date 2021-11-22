@@ -40,7 +40,7 @@
               <span class="visually-hidden">Избранное</span>
               <span class="favorites-number">12</span>
             </a>
-            <div class="popover popover-favorites popover-open"> <!---->
+            <div class="popover popover-favorites"> <!--popover-open-->
               <div class="popover-content">
                 <h2 class="visually-hidden">Избранное</h2>
                 <ul class="favorites-items-list">
@@ -166,11 +166,13 @@
             <p class="newsletter-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           </div>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="newsletter-email">
-            <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-            </p>
-            <button class="button-medium button-blue newsletter-button" type="submit">Подписаться</button>
+            <div class="newsletter-container">
+              <p class="newsletter-email">
+              <label class="visually-hidden" for="newsletter-email">Email</label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              </p>
+              <button class="button-medium button-blue newsletter-button" type="submit">Подписаться</button>
+            </div>
           </form>
         </section>
         <section class="footer-contacts">
