@@ -771,7 +771,7 @@ body {
 .search-form .field {
   width: 365px;
   padding: 2px 30px 5px 20px;
-  background-image: url("../img/search-modal/calender.svg");
+  background-image: url("../img/search-calender.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   border-radius: 4px;
