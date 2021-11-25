@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!--<link rel="stylesheet" href="css/styles-new.css">-->
   </head>
   <body>
     <div class="page-container">
@@ -40,9 +41,43 @@
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorites-number">12</span>
               </a>
+              <div class="popover popover-favorites"> <!--popover-open-->
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Избранное</h2>
+                  <ul class="favorites-items-list">
+                    <li class="favorites-item">
+                      <a class="favorites-item-link" href="#">
+                        <img class="favorites-item-image" src="img/hotels/hotel-2-small.png" width="48" height="48" alt="Общий вид Desert Quail Inn">
+                        <p class="favorites-item-title">Desert Quail Inn</p>
+                        <p class="favorites-item-subtitle">Мотель</p>
+                      </a>
+                      <button type="button" class="favorites-item-button button">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/>
+                        </svg>
+                        <span class="visually-hidden">Удалить из избранного</span>
+                      </button>
+                    </li>
+                    <li class="favorites-item">
+                      <a class="favorites-item-link" href="#">
+                        <img class="favorites-item-image" src="img/hotels/hotel-3-small.png" width="48" height="48" alt="Общий вид Villas at Poco Diablo">
+                        <p class="favorites-item-title">Villas at Poco Diablo</p>
+                        <p class="favorites-item-subtitle">Апартаменты</p>
+                      </a>
+                      <button type="button" class="favorites-item-button button">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/>
+                        </svg>
+                        <span class="visually-hidden">Удалить из избранного</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <a class="button-small button-brown all-button" href="#">Все избранные</a>
+                </div>
+              </div>
             </div>
-            <a class="button-small button-brown" href="#search">Хочу сюда!</a>
-        </div>
+            <a class="button-small button-brown" href="index.html#search">Хочу сюда!</a>
+          </div>
         </nav>
       </header>
 
@@ -133,10 +168,10 @@
 
                       <div class="range-scale">
                         <div class="range-bar" style="left: 0px; width: 225px;">
-                          <button class="range-toggle toggle-min">
+                          <button class="range-toggle toggle-min" type="button">
                             <span class="visually-hidden">Изменить минимальную цену.</span>
                           </button>
-                          <button class="range-toggle toggle-max">
+                          <button class="range-toggle toggle-max" type="button">
                             <span class="visually-hidden">Изменить максимальную цену.</span>
                           </button>
                         </div>
@@ -193,7 +228,7 @@
                 </div>
                 <div class="element-card-column2">
                   <a class="element-card-title-link" href="#">
-                    <h3 class="element-card-title">Amara Resort & Spa</h3>
+                    <h3 class="element-card-title">Amara Resort & Spa 2Amara Resort & Spa 3Amara Resort & Spa</h3>
                   </a>
                   <span class="element-card-type">Гостиница</span>
                   <span class="element-card-price">От 4000 ₽</span>
